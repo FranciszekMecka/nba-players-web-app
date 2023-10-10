@@ -78,7 +78,8 @@ public class Main {
                         .stream())
                 .collect(Collectors.toSet());
 
-        Set<Player> filteredPlayers = allPlayers.stream().filter(player -> player.getAge() >= 40).collect(Collectors.toSet());
+        Set<Player> filteredPlayers = allPlayers.stream().
+                filter(player -> player.getAge() >= 40).collect(Collectors.toSet());
 
         System.out.println(allPlayers);
         System.out.println(filteredPlayers);
