@@ -24,11 +24,7 @@ public class Organization implements Serializable {
 
     @Override
     public String toString() {
-        StringBuilder output = new StringBuilder(name + ", " + dateOfEstablishment);
-//        for(Player player : players) {
-//            output.append("\t" + player.toString() + "\n");
-//        }
-        return output.toString();
+        return name + ", " + dateOfEstablishment;
     }
 
     public void customTask() throws InterruptedException {

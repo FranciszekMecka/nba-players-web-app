@@ -10,21 +10,23 @@ import java.util.Objects;
 @Builder
 @Getter
 @Setter
+@ToString
 public class Player  implements Comparable<Player>, Serializable {
     private String name;
     private String surname;
     private String nationality;
-    private int id;
+    private int jerseyNumber;
     private int age;
     private int height;
     private float weight;
     private int dateOfBirth;
     private int salary;
+    @ToString.Exclude
     private Organization organization;
 
     @Override
     public int hashCode() {
-        return Objects.hash(name, surname, id, dateOfBirth);
+        return Objects.hash(name, surname, jerseyNumber, dateOfBirth);
     }
 
     @Override
@@ -32,12 +34,4 @@ public class Player  implements Comparable<Player>, Serializable {
         return this.salary - o.salary;
     }
 
-    @Override
-    public String toString() {
-        return "Player(" +
-                "name=" + name + ", " +
-                "surname=" + surname + ", " +
-                "id=" + id +
-                ")";
-    }
 }
