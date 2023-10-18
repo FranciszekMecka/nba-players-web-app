@@ -4,7 +4,7 @@ import jakarta.persistence.*;
 import lombok.*;
 
 import java.io.Serializable;
-import java.util.ArrayList;
+import java.util.List;
 import java.util.UUID;
 
 @Getter
@@ -23,12 +23,7 @@ public class Organization implements Serializable {
     private int dateOfEstablishment;
     @OneToMany(mappedBy = "organization", fetch = FetchType.LAZY)
     @EqualsAndHashCode.Exclude
-    private ArrayList<Player> players;
-
-    public void addPlayer(Player o) {
-        if (!players.contains(o)) {
-            players.add(o);
-            o.setOrganization(this);
-        }
-    }
+//    private ArrayList<Player> players; having this field as array list crashes JPA(?) for some reason,
+//    when PlayerService.findAllByOrganization() is called
+    private List<Player> players; // this works and returns the collection as expected
 }

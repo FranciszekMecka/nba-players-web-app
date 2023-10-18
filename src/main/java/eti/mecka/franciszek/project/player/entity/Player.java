@@ -4,7 +4,7 @@ import jakarta.persistence.*;
 import lombok.*;
 
 import java.io.Serializable;
-import java.util.Objects;
+import java.time.LocalDate;
 import java.util.UUID;
 
 @AllArgsConstructor
@@ -18,7 +18,7 @@ import java.util.UUID;
 @Table(name = "players")
 public class Player implements Comparable<Player>, Serializable {
     @Id
-    private UUID uuid;
+    private UUID id;
     private String first_name;
     private String surname;
     private String nationality;
@@ -26,8 +26,7 @@ public class Player implements Comparable<Player>, Serializable {
     private int age;
     private int height;
     private float weight;
-    private int dateOfBirth;
-    private int salary;
+    private LocalDate dateOfBirth;
     @ToString.Exclude
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "organization")
@@ -35,7 +34,6 @@ public class Player implements Comparable<Player>, Serializable {
 
     @Override
     public int compareTo(Player o) {
-        return this.salary - o.salary;
+        return this.age - o.age;
     }
-
 }
