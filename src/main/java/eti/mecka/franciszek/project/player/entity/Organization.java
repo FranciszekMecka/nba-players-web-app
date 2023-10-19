@@ -23,7 +23,6 @@ public class Organization implements Serializable {
     private int dateOfEstablishment;
     @OneToMany(mappedBy = "organization", fetch = FetchType.LAZY)
     @EqualsAndHashCode.Exclude
-//    private ArrayList<Player> players; having this field as array list crashes JPA(?) for some reason,
-//    when PlayerService.findAllByOrganization() is called
-    private List<Player> players; // this works and returns the collection as expected
+    @ToString.Exclude
+    private List<Player> players;
 }

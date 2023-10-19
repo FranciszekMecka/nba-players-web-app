@@ -1,12 +1,13 @@
 package eti.mecka.franciszek.project.cmd;
 
-import com.fasterxml.jackson.databind.ObjectWriter;
+import eti.mecka.franciszek.project.player.entity.Organization;
 import eti.mecka.franciszek.project.player.entity.Player;
 import eti.mecka.franciszek.project.player.service.api.OrganizationService;
 import eti.mecka.franciszek.project.player.service.api.PlayerService;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
+import java.time.LocalDate;
 import java.util.*;
 
 @Component
@@ -14,9 +15,11 @@ public class ApplicationCommand implements CommandLineRunner {
 
 
     private final PlayerService playerService;
+    private final OrganizationService organizationService;
 
-    public ApplicationCommand(PlayerService playerService) {
+    public ApplicationCommand(PlayerService playerService, OrganizationService organizationService) {
         this.playerService = playerService;
+        this.organizationService = organizationService;
     }
 
     @Override
@@ -56,6 +59,11 @@ public class ApplicationCommand implements CommandLineRunner {
                 }
                 case "put_player" -> {
                     try {
+
+                        System.out.println("Choose one of the organizations, type in the UUID of the desired one.");
+                        organizationService.findAll().forEach(System.out::println);
+                        Optional<Organization> organization = organizationService.find(UUID.fromString(scanner.next()));
+
                         Player player = Player.builder()
                                 .id(UUID.fromString(scanner.next()))
                                 .first_name(scanner.next())
@@ -65,11 +73,16 @@ public class ApplicationCommand implements CommandLineRunner {
                                 .age(scanner.nextInt())
                                 .height(scanner.nextInt())
                                 .weight(scanner.nextFloat())
+                                .dateOfBirth(LocalDate.parse(scanner.next()))
+                                .organization(organization.get())
                                 .build();
                         playerService.create(player);
                     } catch (IllegalArgumentException ex) {
                         System.out.println("Bad Request");
                     }
+                }
+                case "get_organizations" -> {
+                    organizationService.findAll().forEach(System.out::println);
                 }
                 case "quit" -> {
                     break main_loop;

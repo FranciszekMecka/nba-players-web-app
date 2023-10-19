@@ -5,6 +5,7 @@ import eti.mecka.franciszek.project.player.repository.api.OrganizationRepository
 import eti.mecka.franciszek.project.player.service.api.OrganizationService;
 import org.springframework.stereotype.Service;
 
+import java.awt.*;
 import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
@@ -21,6 +22,11 @@ public class OrganizationDefaultService implements OrganizationService {
     @Override
     public Optional<Organization> find(UUID id) {
         return repository.findById(id);
+    }
+
+    @Override
+    public List<Organization> findAll() {
+        return repository.findAll();
     }
 
     @Override
