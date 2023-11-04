@@ -25,4 +25,5 @@ public class Organization implements Serializable {
     @EqualsAndHashCode.Exclude
     @ToString.Exclude
     private List<Player> players;
+
 }

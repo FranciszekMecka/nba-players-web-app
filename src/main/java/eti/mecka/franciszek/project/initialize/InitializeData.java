@@ -46,7 +46,7 @@ public class InitializeData implements InitializingBean {
 
         Player player1 = Player.builder()
                 .id(UUID.fromString("c4804e0f-769e-4ab9-9ebe-0578fb4f00a6"))
-                .first_name("Oshae")
+                .firstName("Oshae")
                 .surname("Brissett")
                 .nationality("Canada")
                 .jerseyNumber(12)
@@ -59,7 +59,7 @@ public class InitializeData implements InitializingBean {
 
         Player player2 = Player.builder()
                 .id(UUID.fromString("81e1c2a9-7f57-439b-b53d-6db88b071e4e"))
-                .first_name("Jaylen")
+                .firstName("Jaylen")
                 .surname("Brown")
                 .nationality("USA")
                 .jerseyNumber(7)
@@ -72,7 +72,7 @@ public class InitializeData implements InitializingBean {
 
         Player player3 = Player.builder()
                 .id(UUID.fromString("ed6cfb2a-cad7-47dd-9b56-9d1e3c7a4197"))
-                .first_name("Anthony")
+                .firstName("Anthony")
                 .surname("Davis")
                 .nationality("USA")
                 .jerseyNumber(3)

@@ -91,7 +91,7 @@ public class ApplicationCommand implements CommandLineRunner {
                                 "dateOfBirth (yyyy-mm-dd");
                         Player player = Player.builder()
                                 .id(UUID.fromString(scanner.next()))
-                                .first_name(scanner.next())
+                                .firstName(scanner.next())
                                 .surname(scanner.next())
                                 .nationality(scanner.next())
                                 .jerseyNumber(scanner.nextInt())
