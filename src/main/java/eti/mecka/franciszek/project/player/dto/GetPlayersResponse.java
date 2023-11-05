@@ -28,5 +28,5 @@ public class GetPlayersResponse {
     }
 
     @Singular
-    private List<Player> characters;
+    private List<Player> players;
 }
