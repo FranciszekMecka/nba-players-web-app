@@ -1,4 +1,4 @@
-package eti.mecka.franciszek.project.controller.api;
+package eti.mecka.franciszek.project.player.controller.api;
 
 import eti.mecka.franciszek.project.player.dto.GetPlayerResponse;
 import eti.mecka.franciszek.project.player.dto.GetPlayersResponse;
@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.UUID;
 
-public interface CharacterController {
+public interface PlayerController {
 
     /**
      * @return list of players
@@ -44,25 +44,10 @@ public interface CharacterController {
     );
 
     /**
-     * @param organizationId organization's id
-     * @param playerId       player's id
-     * @return player of given id from organization
-     */
-    @GetMapping("/api/organizations/{organizationId}/players/{playerId}")
-    @ResponseStatus(HttpStatus.OK)
-    @ResponseBody
-    GetPlayerResponse getOrganizationPlayer(
-            @PathVariable("organizationId")
-            UUID organizationId,
-            @PathVariable("playerId")
-            UUID playerId
-    );
-
-    /**
      * @param id      player's id
      * @param request new player
      */
-    @GetMapping("/api/players/{id}")
+    @PutMapping("/api/players/{id}")
     @ResponseStatus(HttpStatus.CREATED)
     void putPlayer(
             @PathVariable("id")

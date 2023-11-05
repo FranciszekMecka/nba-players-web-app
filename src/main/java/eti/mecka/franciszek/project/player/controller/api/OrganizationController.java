@@ -1,4 +1,4 @@
-package eti.mecka.franciszek.project.controller.api;
+package eti.mecka.franciszek.project.player.controller.api;
 
 import eti.mecka.franciszek.project.player.dto.GetOrganizationResponse;
 import eti.mecka.franciszek.project.player.dto.GetOrganizationsResponse;

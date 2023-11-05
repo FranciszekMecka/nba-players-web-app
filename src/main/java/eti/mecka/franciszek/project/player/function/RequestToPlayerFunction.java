@@ -13,7 +13,7 @@ import java.util.function.BiFunction;
  * by business logic.
  */
 @Component
-public class RequestToCharacterFunction implements BiFunction<UUID, PutPlayerRequest, Player> {
+public class RequestToPlayerFunction implements BiFunction<UUID, PutPlayerRequest, Player> {
     @Override
     public Player apply(UUID id, PutPlayerRequest request) {
         return Player.builder()

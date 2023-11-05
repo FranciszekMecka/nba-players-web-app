@@ -92,7 +92,7 @@ public class ApplicationCommand implements CommandLineRunner {
                         Player player = Player.builder()
                                 .id(UUID.fromString(scanner.next()))
                                 .firstName(scanner.next())
-                                .surname(scanner.next())
+                                .lastName(scanner.next())
                                 .nationality(scanner.next())
                                 .jerseyNumber(scanner.nextInt())
                                 .age(scanner.nextInt())
