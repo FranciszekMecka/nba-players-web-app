@@ -3,8 +3,10 @@ package eti.mecka.franciszek.project.player.controller.api;
 import eti.mecka.franciszek.project.player.dto.GetPlayerResponse;
 import eti.mecka.franciszek.project.player.dto.GetPlayersResponse;
 import eti.mecka.franciszek.project.player.dto.PutPlayerRequest;
+import eti.mecka.franciszek.project.player.dto.PatchPlayerRequest;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
+
 
 import java.util.UUID;
 
@@ -66,5 +68,20 @@ public interface PlayerController {
     void deletePlayer(
             @PathVariable("id")
             UUID id
+    );
+
+    /**
+     * Updates selected player using PATCH.
+     *
+     * @param id      player's id
+     * @param request update request
+     */
+    @PatchMapping("/api/players/{id}")
+    @ResponseStatus(HttpStatus.OK)
+    void patchPlayer(
+            @PathVariable("id")
+            UUID id,
+            @RequestBody
+            PatchPlayerRequest request
     );
 }

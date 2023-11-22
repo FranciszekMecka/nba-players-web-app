@@ -33,6 +33,11 @@ public class OrganizationDefaultService implements OrganizationService {
     public void create(Organization organization) { repository.save(organization); }
 
     @Override
+    public void update(Organization organization) {
+        repository.save(organization);
+    }
+
+    @Override
     public void delete(UUID id) {
         repository.findById(id).ifPresent(repository::delete);
     }

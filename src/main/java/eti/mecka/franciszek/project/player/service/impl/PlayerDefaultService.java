@@ -56,9 +56,7 @@ public class PlayerDefaultService implements PlayerService {
     }
 
     @Override
-    public void update(Player player) {
-        repository.save(player);
-    }
+    public void update(Player player) { repository.save(player); }
 
     @Override
     public void delete(UUID id) {

@@ -3,6 +3,7 @@ package eti.mecka.franciszek.project.player.controller.impl;
 import eti.mecka.franciszek.project.player.controller.api.PlayerController;
 import eti.mecka.franciszek.project.player.dto.GetPlayerResponse;
 import eti.mecka.franciszek.project.player.dto.GetPlayersResponse;
+import eti.mecka.franciszek.project.player.dto.PatchPlayerRequest;
 import eti.mecka.franciszek.project.player.dto.PutPlayerRequest;
 import eti.mecka.franciszek.project.player.function.PlayerToResponseFunction;
 import eti.mecka.franciszek.project.player.function.PlayersToResponseFunction;
@@ -65,6 +66,23 @@ public class PlayerDefaultController implements PlayerController {
         service.find(id)
                 .ifPresentOrElse(
                         player -> service.delete(id),
+                        () -> {
+                            throw new ResponseStatusException(HttpStatus.NOT_FOUND);
+                        }
+                );
+    }
+
+    @Override
+    public void patchPlayer(UUID id, PatchPlayerRequest request) {
+        service.find(id)
+                .ifPresentOrElse(
+                        player -> {
+                            player.setFirstName(request.getFirstName());
+                            player.setLastName(request.getLastName());
+                            player.setAge(request.getAge());
+                            player.setJerseyNumber(request.getJerseyNumber());
+                            service.update(player);
+                        },
                         () -> {
                             throw new ResponseStatusException(HttpStatus.NOT_FOUND);
                         }
