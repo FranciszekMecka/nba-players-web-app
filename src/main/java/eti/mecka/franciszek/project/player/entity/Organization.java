@@ -21,7 +21,7 @@ public class Organization implements Serializable {
     private UUID id;
     private String name;
     private int dateOfEstablishment;
-    @OneToMany(mappedBy = "organization", fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "organization", fetch = FetchType.LAZY, cascade = CascadeType.REMOVE)
     @EqualsAndHashCode.Exclude
     @ToString.Exclude
     private List<Player> players;
