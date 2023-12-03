@@ -19,7 +19,6 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="project" options="-parameters" />
       <module name="project (1)" options="-parameters" />
       <module name="project (2)" options="-parameters" />
       <module name="project (3)" options="-parameters" />

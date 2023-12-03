@@ -24,10 +24,7 @@ public class OrganizationDefaultController implements OrganizationController {
 
     @Override
     public void createOrganization(UUID id) {
-        service.create(Organization.builder()
-                        .id(id)
-//                        .players()
-                .build());
+        service.create(Organization.builder().id(id).build());
     }
 
     @Override

@@ -2,9 +2,10 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/labs-gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/labs-gateway/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/labs-organization/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/labs-organization/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/labs-player/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/labs-player/src/main/resources" charset="UTF-8" />
   </component>
 </project>

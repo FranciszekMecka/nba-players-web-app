@@ -4,4 +4,5 @@ import java.util.UUID;
 
 public interface OrganizationEventRepository {
     void delete(UUID id);
+    void create(UUID id);
 }

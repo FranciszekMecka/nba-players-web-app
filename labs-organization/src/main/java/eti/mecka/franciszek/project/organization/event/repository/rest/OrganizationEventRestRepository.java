@@ -18,4 +18,9 @@ public class OrganizationEventRestRepository implements OrganizationEventReposit
     public void delete(UUID id) {
         restTemplate.delete("/api/organizations/{id}", id);
     }
+
+    @Override
+    public void create(UUID id) {
+        restTemplate.put("/api/organizations/{id}", id);
+    }
 }

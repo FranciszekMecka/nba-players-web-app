@@ -32,7 +32,9 @@ public class OrganizationDefaultService implements OrganizationService {
     }
 
     @Override
-    public void create(Organization organization) { repository.save(organization); }
+    public void create(Organization organization) {
+        repository.save(organization);
+    }
 
     @Override
     public void update(Organization organization) {
