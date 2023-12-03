@@ -17,6 +17,7 @@ public class PlayerToResponseFunction implements Function<Player, GetPlayerRespo
         return GetPlayerResponse.builder()
                 .id(entity.getId())
                 .firstName(entity.getFirstName())
+                .lastName(entity.getLastName())
                 .nationality(entity.getNationality())
                 .jerseyNumber(entity.getJerseyNumber())
                 .age(entity.getAge())

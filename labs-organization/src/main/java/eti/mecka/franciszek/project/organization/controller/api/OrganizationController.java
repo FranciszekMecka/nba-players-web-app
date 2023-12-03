@@ -31,6 +31,14 @@ public interface OrganizationController {
             UUID id
     );
 
+    @PutMapping("/api/organizations/{id}")
+    @ResponseStatus(HttpStatus.CREATED)
+    @ResponseBody
+    void PutOrganization(
+            @PathVariable("id")
+            UUID id
+
+    );
     /**
      * Deletes selected organization.
      *
