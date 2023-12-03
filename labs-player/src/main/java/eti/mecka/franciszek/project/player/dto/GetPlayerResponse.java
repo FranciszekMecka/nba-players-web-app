@@ -22,7 +22,7 @@ public class GetPlayerResponse {
     public static class Organization {
         private UUID id;
         private String name;
-        private int dateOfEstablishment;
+        private LocalDate DateOfEstablishment;
 
     }
 

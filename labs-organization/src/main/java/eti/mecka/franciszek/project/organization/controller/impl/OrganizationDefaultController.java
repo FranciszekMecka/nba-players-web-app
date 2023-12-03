@@ -6,6 +6,7 @@ import eti.mecka.franciszek.project.organization.dto.GetOrganizationsResponse;
 import eti.mecka.franciszek.project.organization.dto.PutOrganizationRequest;
 import eti.mecka.franciszek.project.organization.function.OrganizationToResponseFunction;
 import eti.mecka.franciszek.project.organization.function.OrganizationsToResponseFunction;
+import eti.mecka.franciszek.project.organization.function.RequestToOrganizationFunction;
 import eti.mecka.franciszek.project.organization.service.api.OrganizationService;
 import lombok.extern.java.Log;
 import org.springframework.http.HttpStatus;
@@ -21,15 +22,17 @@ public class OrganizationDefaultController implements OrganizationController {
     private final OrganizationService service;
     private final OrganizationToResponseFunction organizationToResponse;
     private final OrganizationsToResponseFunction organizationsToResponse;
+    private final RequestToOrganizationFunction requestToOrganizationFunction;
 
     public OrganizationDefaultController(
             OrganizationService service,
             OrganizationToResponseFunction organizationToResponse,
-            OrganizationsToResponseFunction organizationsToResponse
-    ) {
+            OrganizationsToResponseFunction organizationsToResponse,
+            RequestToOrganizationFunction requestToOrganizationFunction) {
         this.service = service;
         this.organizationToResponse = organizationToResponse;
         this.organizationsToResponse = organizationsToResponse;
+        this.requestToOrganizationFunction = requestToOrganizationFunction;
     }
 
     @Override
@@ -46,6 +49,7 @@ public class OrganizationDefaultController implements OrganizationController {
 
     @Override
     public void PutOrganization(UUID id, PutOrganizationRequest request) {
+        service.create(requestToOrganizationFunction.apply(id, request));
 
     }
 

@@ -20,8 +20,6 @@ import java.util.UUID;
 public class Organization implements Serializable {
     @Id
     private UUID id;
-    private String name;
-    private int dateOfEstablishment;
     @OneToMany(mappedBy = "organization", fetch = FetchType.LAZY, cascade = CascadeType.REMOVE)
     @EqualsAndHashCode.Exclude
     @ToString.Exclude

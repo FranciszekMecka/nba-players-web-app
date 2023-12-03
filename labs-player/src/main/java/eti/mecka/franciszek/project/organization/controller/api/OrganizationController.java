@@ -11,6 +11,12 @@ public interface OrganizationController {
      *
      * @param id organization's id
      */
+    @PutMapping("/api/organizations/{id}")
+    @ResponseStatus(HttpStatus.CREATED)
+    void createOrganization(
+            @PathVariable("id")
+            UUID id
+    );
     @DeleteMapping("/api/organizations/{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     void deleteOrganization(

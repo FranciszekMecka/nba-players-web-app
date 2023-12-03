@@ -26,7 +26,6 @@ public class PlayerToResponseFunction implements Function<Player, GetPlayerRespo
                 .dateOfBirth(entity.getDateOfBirth())
                 .organization(GetPlayerResponse.Organization.builder()
                         .id(entity.getOrganization().getId())
-                        .name(entity.getOrganization().getName())
                         .build())
                 .build();
     }

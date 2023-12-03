@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.*;
 
 import java.io.Serializable;
+import java.time.LocalDate;
 import java.util.UUID;
 
 @Getter
@@ -19,5 +20,5 @@ public class Organization implements Serializable {
     @Id
     private UUID id;
     private String name;
-
+    private LocalDate dateOfEstablishment;
 }
