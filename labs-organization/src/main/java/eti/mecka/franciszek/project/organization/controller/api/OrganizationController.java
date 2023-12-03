@@ -2,6 +2,7 @@ package eti.mecka.franciszek.project.organization.controller.api;
 
 import eti.mecka.franciszek.project.organization.dto.GetOrganizationResponse;
 import eti.mecka.franciszek.project.organization.dto.GetOrganizationsResponse;
+import eti.mecka.franciszek.project.organization.dto.PutOrganizationRequest;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
@@ -36,9 +37,12 @@ public interface OrganizationController {
     @ResponseBody
     void PutOrganization(
             @PathVariable("id")
-            UUID id
+            UUID id,
+            @RequestBody
+            PutOrganizationRequest request
 
     );
+
     /**
      * Deletes selected organization.
      *
