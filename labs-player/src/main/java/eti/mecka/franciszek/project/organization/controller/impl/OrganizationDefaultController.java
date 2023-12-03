@@ -26,7 +26,7 @@ public class OrganizationDefaultController implements OrganizationController {
     public void createOrganization(UUID id) {
         service.create(Organization.builder()
                         .id(id)
-                        .players()
+//                        .players()
                 .build());
     }
 

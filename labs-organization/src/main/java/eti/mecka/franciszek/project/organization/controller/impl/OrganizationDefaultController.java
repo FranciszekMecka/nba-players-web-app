@@ -3,6 +3,7 @@ package eti.mecka.franciszek.project.organization.controller.impl;
 import eti.mecka.franciszek.project.organization.controller.api.OrganizationController;
 import eti.mecka.franciszek.project.organization.dto.GetOrganizationResponse;
 import eti.mecka.franciszek.project.organization.dto.GetOrganizationsResponse;
+import eti.mecka.franciszek.project.organization.dto.PatchOrganizationRequest;
 import eti.mecka.franciszek.project.organization.dto.PutOrganizationRequest;
 import eti.mecka.franciszek.project.organization.function.OrganizationToResponseFunction;
 import eti.mecka.franciszek.project.organization.function.OrganizationsToResponseFunction;
@@ -64,4 +65,18 @@ public class OrganizationDefaultController implements OrganizationController {
                 );
     }
 
+    @Override
+    public void patchOrganization(UUID id, PatchOrganizationRequest request) {
+        service.find(id)
+                .ifPresentOrElse(
+                        organization -> {
+                        organization.setName(request.getName());
+                        organization.setDateOfEstablishment(request.getDateOfEstablishment());
+                        service.update(organization);
+                        },
+                        () -> {
+                            throw new ResponseStatusException(HttpStatus.NOT_FOUND);
+                        }
+                );
+    }
 }

@@ -3,6 +3,7 @@ package eti.mecka.franciszek.project.organization.controller.api;
 import eti.mecka.franciszek.project.organization.dto.GetOrganizationResponse;
 import eti.mecka.franciszek.project.organization.dto.GetOrganizationsResponse;
 import eti.mecka.franciszek.project.organization.dto.PutOrganizationRequest;
+import eti.mecka.franciszek.project.organization.dto.PatchOrganizationRequest;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
@@ -40,7 +41,6 @@ public interface OrganizationController {
             UUID id,
             @RequestBody
             PutOrganizationRequest request
-
     );
 
     /**
@@ -53,5 +53,14 @@ public interface OrganizationController {
     void deleteOrganization(
             @PathVariable("id")
             UUID id
+    );
+
+    @PatchMapping("/api/organizations/{id}")
+    @ResponseStatus(HttpStatus.OK)
+    void patchOrganization(
+            @PathVariable("id")
+            UUID id,
+            @RequestBody
+            PatchOrganizationRequest request
     );
 }

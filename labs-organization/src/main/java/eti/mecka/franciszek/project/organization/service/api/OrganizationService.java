@@ -10,5 +10,7 @@ public interface OrganizationService {
     Optional<Organization> find(UUID id);
     List<Organization> findAll();
     void create(Organization organization);
+
+    void update(Organization organization);
     void delete(UUID id);
 }
