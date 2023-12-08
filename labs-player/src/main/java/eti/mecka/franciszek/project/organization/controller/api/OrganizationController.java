@@ -13,7 +13,7 @@ public interface OrganizationController {
      */
     @PutMapping("/api/organizations/{id}")
     @ResponseStatus(HttpStatus.CREATED)
-    void createOrganization(
+    void putOrganization(
             @PathVariable("id")
             UUID id
     );

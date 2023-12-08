@@ -1,5 +1,6 @@
 package eti.mecka.franciszek.project.organization.event.repository.rest;
 
+import eti.mecka.franciszek.project.organization.entity.Organization;
 import eti.mecka.franciszek.project.organization.event.repository.api.OrganizationEventRepository;
 import org.springframework.stereotype.Repository;
 import org.springframework.web.client.RestTemplate;
@@ -20,7 +21,7 @@ public class OrganizationEventRestRepository implements OrganizationEventReposit
     }
 
     @Override
-    public void create(UUID id) {
-        restTemplate.put("/api/organizations/{id}", id);
+    public void create(UUID id, Organization organization) {
+        restTemplate.put("/api/organizations/{id}", organization, id);
     }
 }

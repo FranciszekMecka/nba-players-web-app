@@ -23,7 +23,7 @@ public class OrganizationDefaultController implements OrganizationController {
 
 
     @Override
-    public void createOrganization(UUID id) {
+    public void putOrganization(UUID id) {
         service.create(Organization.builder().id(id).build());
     }
 

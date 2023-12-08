@@ -1,1 +1,118 @@
+###
+GET http://localhost:8083/api/organizations
+
+###
+GET http://localhost:8083/api/organizations/5d1da2ae-6a14-4b6d-8b4f-d117867118d4
+
+###
+GET http://localhost:8083/api/organizations/f5875513-bf7b-4ae1-b8a5-5b70a1b90e76
+
+###
+DELETE http://localhost:8083/api/organizations/5d1da2ae-6a14-4b6d-8b4f-d117867118d4
+
+###
+PATCH http://localhost:8083/api/organizations/f5875513-bf7b-4ae1-b8a5-5b70a1b90e76
+Content-Type: application/json
+
+{
+  "name" : "Celtics Test",
+  "dateOfEstablishment" : 2000
+}
+
+###
+PUT http://localhost:8083/api/organizations/550e8400-e29b-41d4-a716-446655440000
+Content-Type: application/json
+
+{
+  "name": "Test Organization",
+  "dateOfEstablishment": 2002,
+  "players": []
+}
+
+###
+PUT http://localhost:8083/api/players/123e4567-e89b-42d3-a456-556642440000
+Content-Type: application/json
+
+{
+  "firstName" : "Franciszek",
+  "lastName" : "Mecka",
+  "nationality" :  "Poland",
+  "jerseyNumber" : 25,
+  "age" :  21,
+  "height" : 180,
+  "weight" :  64,
+  "dateOfBirth" : "2002-05-12",
+  "organization" :  "5d1da2ae-6a14-4b6d-8b4f-d117867118d4"
+}
+
+###
+GET http://localhost:8083/api/organizations/5d1da2ae-6a14-4b6d-8b4f-d117867118d4/players
+
+###
+PATCH http://localhost:8083/api/players/123e4567-e89b-42d3-a456-556642440000
+Content-Type: application/json
+
+{
+  "firstName" : "Andrzej",
+  "lastName" : "Mecka",
+  "age" : 21,
+  "jerseyNumber" : 50
+}
+
+###
+GET http://localhost:8081/api/organizations
+
+###
 GET http://localhost:8083/api/players
+
+###
+GET http://localhost:8083/api/organizations
+
+###
+DELETE http://localhost:8083/api/organizations/f5875513-bf7b-4ae1-b8a5-5b70a1b90e76
+
+###
+GET http://localhost:8083/api/organizations
+
+###
+PUT http://localhost:8083/api/organizations/26483fe0-9208-11ee-b9d1-0242ac120002
+Content-Type: application/json
+
+{
+  "name" : "Put team1",
+  "dateOfEstablishment" : "2000-12-12"
+}
+
+###
+PUT http://localhost:8083/api/organizations/0cc4677a-9211-11ee-b9d1-0242ac120002
+Content-Type: application/json
+
+{
+  "name" : "Space Jam Team",
+  "dateOfEstablishment" : "2020-05-11"
+}
+
+###
+PUT http://localhost:8083/api/players/495629aa-920a-11ee-b9d1-0242ac120002
+Content-Type: application/json
+
+{
+  "firstName" : "Johnny",
+  "lastName" : "Test",
+  "nationality" :  "USA",
+  "jerseyNumber" : 23,
+  "age" :  21,
+  "height" : 180,
+  "weight" :  140,
+  "dateOfBirth" : "2020-05-11",
+  "organization" : "0cc4677a-9211-11ee-b9d1-0242ac120002"
+}
+
+###
+GET http://localhost:8083/api/organizations
+
+###
+GET http://localhost:8083/api/organizations/0cc4677a-9211-11ee-b9d1-0242ac120002/players
+
+###
+DELETE http://localhost:8083/api/organizations/0cc4677a-9211-11ee-b9d1-0242ac120002

@@ -34,6 +34,7 @@ public class OrganizationDefaultService implements OrganizationService {
     @Override
     public void create(Organization organization) {
         repository.save(organization);
+        eventRepository.create(organization.getId(), organization);
     }
 
     @Override
