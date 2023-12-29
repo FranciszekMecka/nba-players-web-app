@@ -1,0 +1,17 @@
+<article class="text--justified">
+  <header><h2>Teams</h2></header>
+
+  <table *ngIf="organizations">
+    <thead>
+    <tr>
+      <th>Name</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let organization of organizations?.organizations">
+      <td>{{ organization.name }}</td>
+      <td><button class="btn" (click)="onDelete(organization)">Delete</button></td>
+    </tr>
+    </tbody>
+  </table>
+</article>
