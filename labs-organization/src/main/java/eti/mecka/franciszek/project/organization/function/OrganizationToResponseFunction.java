@@ -16,6 +16,7 @@ public class OrganizationToResponseFunction implements Function<Organization, Ge
         return GetOrganizationResponse.builder()
                 .id(entity.getId())
                 .name(entity.getName())
+                .dateOfEstablishment(entity.getDateOfEstablishment())
                 .build();
     }
 }

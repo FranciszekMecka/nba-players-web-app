@@ -1,19 +1,20 @@
 <article class="text--justified">
-  <header><h2>Characters</h2></header>
-
+  <header><h2>Players</h2></header>
+  <a [routerLink]="['/players/create']">Add a Player</a>
   <table *ngIf="players">
     <thead>
     <tr>
-      <th>Name</th>
-      <th>Last Name</th>
-      <th>Delete</th>
+      <th>first/last name</th>
+      <th></th>
     </tr>
     </thead>
     <tbody>
     <tr *ngFor="let player of players?.players">
-      <td>{{ player.firstName }}</td>
-      <td>{{ player.lastName }}</td>
-      <td><button class="btn" (click)="onDelete(player)">Delete</button></td>
+      <td>
+        <a [routerLink]="['/players', player.id]">{{player.firstName + " " + player.lastName}}</a>
+      <td>
+        <button class="btn" (click)="onDelete(player)">Delete</button>
+      </td>
     </tr>
     </tbody>
   </table>

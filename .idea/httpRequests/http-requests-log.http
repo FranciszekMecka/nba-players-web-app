@@ -1,0 +1,285 @@
+PATCH http://localhost:8083/api/players/123e4567-e89b-42d3-a456-556642440000
+Content-Type: application/json
+Content-Length: 90
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "firstName" : "Andrzej",
+  "lastName" : "Mecka",
+  "age" : 21,
+  "jerseyNumber" : 50
+}
+
+###
+
+PUT http://localhost:8083/api/players/123e4567-e89b-42d3-a456-556642440000
+Content-Type: application/json
+Content-Length: 243
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "firstName" : "Franciszek",
+  "lastName" : "Mecka",
+  "nationality" :  "Poland",
+  "jerseyNumber" : 25,
+  "age" :  21,
+  "height" : 180,
+  "weight" :  64,
+  "dateOfBirth" : 2002,
+  "organization" :  "5d1da2ae-6a14-4b6d-8b4f-d117867118d4"
+}
+
+###
+
+PATCH http://localhost:8083/api/organizations/f5875513-bf7b-4ae1-b8a5-5b70a1b90e76
+Content-Type: application/json
+Content-Length: 61
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name" : "Celtics Test",
+  "dateOfEstablishment" : 2000
+}
+
+###
+
+PUT http://localhost:8083/api/players/495629aa-920a-11ee-b9d1-0242ac120002
+Content-Type: application/json
+Content-Length: 243
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "firstName" : "Johnny",
+  "lastName" : "Test",
+  "nationality" :  "USA",
+  "jerseyNumber" : 23,
+  "age" :  21,
+  "height" : 180,
+  "weight" :  140,
+  "dateOfBirth" : "2020-05-11",
+  "organization" : "0cc4677a-9211-11ee-b9d1-0242ac120002"
+}
+
+###
+
+PUT http://localhost:8083/api/players/495629aa-920a-11ee-b9d1-0242ac120002
+Content-Type: application/json
+Content-Length: 160
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "firstName" : "Johnny",
+  "lastName" : "Test",
+  "nationality" :  "USA",
+  "jerseyNumber" : 25,
+
+  "organization" : "0cc4677a-9211-11ee-b9d1-0242ac120002"
+}
+
+###
+
+PUT http://localhost:8083/api/players/495629aa-920a-11ee-b9d1-0242ac120002
+Content-Type: application/json
+Content-Length: 243
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "firstName" : "Johnny",
+  "lastName" : "Test",
+  "nationality" :  "USA",
+  "jerseyNumber" : 23,
+  "age" :  21,
+  "height" : 180,
+  "weight" :  140,
+  "dateOfBirth" : "2020-05-11",
+  "organization" : "0cc4677a-9211-11ee-b9d1-0242ac120002"
+}
+
+###
+
+PUT http://localhost:8083/api/players/495629aa-920a-11ee-b9d1-0242ac120002
+Content-Type: application/json
+Content-Length: 243
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "firstName" : "Johnny",
+  "lastName" : "Test",
+  "nationality" :  "USA",
+  "jerseyNumber" : 23,
+  "age" :  21,
+  "height" : 180,
+  "weight" :  140,
+  "dateOfBirth" : "2020-05-11",
+  "organization" : "0cc4677a-9211-11ee-b9d1-0242ac120002"
+}
+
+###
+
+PUT http://localhost:8083/api/organizations/0cc4677a-9211-11ee-b9d1-0242ac120002
+Content-Type: application/json
+Content-Length: 73
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name" : "Space Jam Update",
+  "dateOfEstablishment" : "2020-05-11"
+}
+
+###
+
+PUT http://localhost:8083/api/players/495629aa-920a-11ee-b9d1-0242ac120002
+Content-Type: application/json
+Content-Length: 243
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "firstName" : "Johnny",
+  "lastName" : "Test",
+  "nationality" :  "USA",
+  "jerseyNumber" : 23,
+  "age" :  21,
+  "height" : 180,
+  "weight" :  140,
+  "dateOfBirth" : "2020-05-11",
+  "organization" : "0cc4677a-9211-11ee-b9d1-0242ac120002"
+}
+
+###
+
+PUT http://localhost:8083/api/organizations/0cc4677a-9211-11ee-b9d1-0242ac120002
+Content-Type: application/json
+Content-Length: 71
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name" : "Space Jam Team",
+  "dateOfEstablishment" : "2020-05-11"
+}
+
+###
+
+PUT http://localhost:8083/api/players/123e4567-e89b-42d3-a456-556642440000
+Content-Type: application/json
+Content-Length: 243
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "firstName" : "Franciszek",
+  "lastName" : "Mecka",
+  "nationality" :  "Poland",
+  "jerseyNumber" : 25,
+  "age" :  21,
+  "height" : 180,
+  "weight" :  64,
+  "dateOfBirth" : 2002,
+  "organization" :  "5d1da2ae-6a14-4b6d-8b4f-d117867118d4"
+}
+
+###
+
+PUT http://localhost:8083/api/players/495629aa-920a-11ee-b9d1-0242ac120002
+Content-Type: application/json
+Content-Length: 243
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "firstName" : "Johnny",
+  "lastName" : "Test",
+  "nationality" :  "USA",
+  "jerseyNumber" : 23,
+  "age" :  21,
+  "height" : 180,
+  "weight" :  140,
+  "dateOfBirth" : "2020-05-11",
+  "organization" : "0cc4677a-9211-11ee-b9d1-0242ac120002"
+}
+
+<> 2023-12-29T155541.500.json
+
+###
+
+PUT http://localhost:8083/api/organizations/26483fe0-9208-11ee-b9d1-0242ac120002
+Content-Type: application/json
+Content-Length: 66
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name" : "Put team1",
+  "dateOfEstablishment" : "2000-12-12"
+}
+
+###
+
+PUT http://localhost:8083/api/players/495629aa-920a-11ee-b9d1-0242ac120002
+Content-Type: application/json
+Content-Length: 243
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "firstName" : "Johnny",
+  "lastName" : "Test",
+  "nationality" :  "USA",
+  "jerseyNumber" : 23,
+  "age" :  21,
+  "height" : 180,
+  "weight" :  140,
+  "dateOfBirth" : "2020-05-11",
+  "organization" : "0cc4677a-9211-11ee-b9d1-0242ac120002"
+}
+
+<> 2023-12-29T155530.500.json
+
+###
+
+PUT http://localhost:8083/api/players/495629aa-920a-11ee-b9d1-0242ac120002
+Content-Type: application/json
+Content-Length: 243
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "firstName" : "Johnny",
+  "lastName" : "Test",
+  "nationality" :  "USA",
+  "jerseyNumber" : 23,
+  "age" :  21,
+  "height" : 180,
+  "weight" :  140,
+  "dateOfBirth" : "2020-05-11",
+  "organization" : "0cc4677a-9211-11ee-b9d1-0242ac120002"
+}
+
+<> 2023-12-29T155404.500.json
+
+###
+

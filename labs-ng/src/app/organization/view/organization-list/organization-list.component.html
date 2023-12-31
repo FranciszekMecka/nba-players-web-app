@@ -9,8 +9,12 @@
     </thead>
     <tbody>
     <tr *ngFor="let organization of organizations?.organizations">
-      <td>{{ organization.name }}</td>
-      <td><button class="btn" (click)="onDelete(organization)">Delete</button></td>
+      <td>
+        <a [routerLink]="['/organizations', organization.id]">{{ organization.name }}</a>
+      </td>
+      <td>
+        <button class="btn" (click)="onDelete(organization)">Delete</button>
+      </td>
     </tr>
     </tbody>
   </table>

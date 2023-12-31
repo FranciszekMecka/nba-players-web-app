@@ -36,7 +36,16 @@ public class InitializeData implements InitializingBean {
                 .name("Los Angeles Lakers")
                 .build();
 
+        Organization team3 = Organization.builder()
+                .id(UUID.fromString("ba7f61b8-cc87-4dcd-9898-3fc70c35139e"))
+                .dateOfEstablishment(LocalDate.of(1988, 4, 22))  // Adjust the establishment date as needed
+                .name("Miami Heat")
+                .build();
+
+
         organizationService.create(team1);
         organizationService.create(team2);
+        organizationService.create(team3);
+
     }
 }

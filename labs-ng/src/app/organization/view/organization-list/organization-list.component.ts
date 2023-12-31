@@ -3,13 +3,15 @@ import {Organizations} from "../../model/organizations";
 import {OrganizationService} from "../../service/organization.service";
 import {NgForOf, NgIf} from "@angular/common";
 import {Organization} from "../../model/organization";
+import {RouterLink} from "@angular/router";
 
 @Component({
   selector: 'app-organization-list',
   standalone: true,
   imports: [
     NgForOf,
-    NgIf
+    NgIf,
+    RouterLink
   ],
   templateUrl: './organization-list.component.html',
   styleUrl: './organization-list.component.css'

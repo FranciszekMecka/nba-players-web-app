@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="819646ec-a2f0-4b13-987a-d4b3dfaea606" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/prettier.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/labs-ng/src/app/organization/view/organization-view/organization-view.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/labs-ng/src/app/organization/view/organization-view/organization-view.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/labs-ng/src/app/organization/view/organization-view/organization-view.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/labs-ng/src/app/organization/view/organization-view/organization-view.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/labs-ng/src/app/player/model/player-put-form.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/labs-ng/src/app/player/model/player-view.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/labs-ng/src/app/player/view/player-add/player-add.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/labs-ng/src/app/player/view/player-add/player-add.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/labs-ng/src/app/player/view/player-add/player-add.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/labs-ng/src/app/player/view/player-add/player-add.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/labs-ng/src/app/player/view/player-view/player-view.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/labs-ng/src/app/player/view/player-view/player-view.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/labs-ng/src/app/player/view/player-view/player-view.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/labs-ng/src/app/player/view/player-view/player-view.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/labs.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/labs-ng/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/labs-ng/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/labs-ng/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/labs-ng/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/labs-ng/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/labs-ng/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/labs-ng/src/app/app.routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/labs-ng/src/app/app.routes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/labs-ng/src/app/component/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/labs-ng/src/app/component/header/header.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/labs-ng/src/app/component/header/header.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/labs-ng/src/app/component/header/header.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/labs-ng/src/app/component/main/main.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/labs-ng/src/app/component/main/main.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/labs-ng/src/app/component/nav/nav.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/labs-ng/src/app/component/nav/nav.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/labs-ng/src/app/organization/service/organization.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/labs-ng/src/app/organization/service/organization.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/labs-ng/src/app/organization/view/organization-list/organization-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/labs-ng/src/app/organization/view/organization-list/organization-list.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/labs-ng/src/app/organization/view/organization-list/organization-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/labs-ng/src/app/organization/view/organization-list/organization-list.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/labs-ng/src/app/player/service/player.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/labs-ng/src/app/player/service/player.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/labs-ng/src/app/player/view/player-list/player-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/labs-ng/src/app/player/view/player-list/player-list.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/labs-ng/src/app/player/view/player-list/player-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/labs-ng/src/app/player/view/player-list/player-list.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/labs-organization/src/main/java/eti/mecka/franciszek/project/organization/dto/GetOrganizationResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/labs-organization/src/main/java/eti/mecka/franciszek/project/organization/dto/GetOrganizationResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/labs-organization/src/main/java/eti/mecka/franciszek/project/organization/dto/GetOrganizationsResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/labs-organization/src/main/java/eti/mecka/franciszek/project/organization/dto/GetOrganizationsResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/labs-organization/src/main/java/eti/mecka/franciszek/project/organization/function/OrganizationToResponseFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/labs-organization/src/main/java/eti/mecka/franciszek/project/organization/function/OrganizationToResponseFunction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/labs-organization/src/main/java/eti/mecka/franciszek/project/organization/function/OrganizationsToResponseFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/labs-organization/src/main/java/eti/mecka/franciszek/project/organization/function/OrganizationsToResponseFunction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/labs-organization/src/main/java/eti/mecka/franciszek/project/organization/initialize/InitializeData.java" beforeDir="false" afterPath="$PROJECT_DIR$/labs-organization/src/main/java/eti/mecka/franciszek/project/organization/initialize/InitializeData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/labs-player/src/main/java/eti/mecka/franciszek/project/player/initialize/InitializeData.java" beforeDir="false" afterPath="$PROJECT_DIR$/labs-player/src/main/java/eti/mecka/franciszek/project/player/initialize/InitializeData.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2ZSBEdyjgBW15BOUiV7MIc7WEA1" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/Franz/code/uni/aui/WebApplicationArchitectureCourse",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "settings.javascript.prettier",
+    "ts.external.directory.path": "C:\\Users\\Franz\\code\\uni\\aui\\WebApplicationArchitectureCourse\\labs-ng\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+        <option value="js.build_tools.npm" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="npm.Angular CLI Server">
+    <configuration name="generated-requests | #16" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="16" requestIdentifier="#16" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="generated-requests | #5" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="5" requestIdentifier="#5" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="generated-requests | #6" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="6" requestIdentifier="#6" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="generated-requests | #7" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="7" requestIdentifier="#7" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="generated-requests | #9" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="9" requestIdentifier="#9" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="Angular Application" type="JavascriptDebugType" uri="http://localhost:4200">
+      <method v="2" />
+    </configuration>
+    <configuration name="ProjectGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="project (1)" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="eti.mecka.franciszek.project.ProjectGatewayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProjectOrganizationApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="project (2)" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="eti.mecka.franciszek.project.ProjectOrganizationApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProjectPlayerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="project (3)" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="eti.mecka.franciszek.project.ProjectPlayerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Angular CLI Server" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/labs-ng/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="HTTP Request.generated-requests | #5" />
+      <item itemvalue="HTTP Request.generated-requests | #6" />
+      <item itemvalue="HTTP Request.generated-requests | #9" />
+      <item itemvalue="HTTP Request.generated-requests | #16" />
+      <item itemvalue="HTTP Request.generated-requests | #7" />
+      <item itemvalue="JavaScript Debug.Angular Application" />
+      <item itemvalue="npm.Angular CLI Server" />
+      <item itemvalue="Spring Boot.ProjectGatewayApplication" />
+      <item itemvalue="Spring Boot.ProjectPlayerApplication" />
+      <item itemvalue="Spring Boot.ProjectOrganizationApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="HTTP Request.generated-requests | #9" />
+        <item itemvalue="HTTP Request.generated-requests | #7" />
+        <item itemvalue="HTTP Request.generated-requests | #5" />
+        <item itemvalue="HTTP Request.generated-requests | #6" />
+        <item itemvalue="HTTP Request.generated-requests | #16" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="819646ec-a2f0-4b13-987a-d4b3dfaea606" name="Changes" comment="" />
+      <created>1702405489261</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1702405489261</updated>
+      <workItem from="1702405490348" duration="3821000" />
+      <workItem from="1703719317497" duration="4841000" />
+      <workItem from="1703769565864" duration="325000" />
+      <workItem from="1703776827180" duration="599000" />
+      <workItem from="1703790470040" duration="820000" />
+      <workItem from="1703857474669" duration="14447000" />
+      <workItem from="1703881340568" duration="11012000" />
+      <workItem from="1703947645231" duration="3576000" />
+      <workItem from="1703975867962" duration="6089000" />
+      <workItem from="1704035637301" duration="14334000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

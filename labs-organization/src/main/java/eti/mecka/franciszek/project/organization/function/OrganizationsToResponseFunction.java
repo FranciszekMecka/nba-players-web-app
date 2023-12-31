@@ -17,6 +17,7 @@ public class OrganizationsToResponseFunction implements Function<List<Organizati
                         .map(organization -> GetOrganizationsResponse.Organization.builder()
                                 .id(organization.getId())
                                 .name(organization.getName())
+                                .dateOfEstablishment(organization.getDateOfEstablishment())
                                 .build())
                         .toList())
                 .build();

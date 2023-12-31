@@ -1,0 +1,40 @@
+<p>test</p>
+
+<article *ngIf="player">
+  <header><h2>{{player.firstName}} {{player.lastName}}</h2></header>
+
+  <div class="container">
+    <ul>
+      <li>
+        <span>id: {{player.id}}</span>
+      </li>
+      <li>
+        <span>firstName: {{player.firstName}}</span>
+      </li>
+      <li>
+        <span>lastName: {{player.lastName}}</span>
+      </li>
+      <li>
+        <span>nationality: {{player.nationality}}</span>
+      </li>
+      <li>
+        <span>jerseyNumber: {{player.jerseyNumber}}</span>
+      </li>
+      <li>
+        <span>age: {{player.age}}</span>
+      </li>
+      <li>
+        <span>height: {{player.height}}</span>
+      </li>
+      <li>
+        <span>weight: {{player.weight}}</span>
+      </li>
+      <li>
+        <span>dateOfBirth: {{player.dateOfBirth}}</span>
+      </li>
+      <li>
+        <span>organization id: {{player.organization.id}}</span>
+      </li>
+    </ul>
+  </div>
+</article>

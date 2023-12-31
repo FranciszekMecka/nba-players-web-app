@@ -1,6 +1,7 @@
 package eti.mecka.franciszek.project.organization.dto;
 
 import lombok.*;
+import org.springframework.cglib.core.Local;
 
 import java.time.LocalDate;
 import java.util.Date;
@@ -29,6 +30,7 @@ public class GetOrganizationResponse {
 
     private UUID id;
     private String name;
+    private LocalDate dateOfEstablishment;
 
     @Singular
     private Map<Integer, Achievement> achievements;

@@ -15,6 +15,10 @@ export class OrganizationService {
     return this.http.get<Organizations>('api/organizations');
   }
 
+  getOrganization(uuid: string): Observable<Organization> {
+    return this.http.get<Organization>('/api/organizations/' + uuid);
+  }
+
   deleteOrganization(uuid: string): Observable<any> {
     return this.http.delete('/api/organizations/' + uuid);
   }
