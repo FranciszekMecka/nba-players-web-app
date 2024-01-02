@@ -3,7 +3,7 @@ import {PlayerService} from "../../service/player.service";
 import {OrganizationService} from "../../../organization/service/organization.service";
 import {ActivatedRoute, Router} from "@angular/router";
 import {Organizations} from "../../../organization/model/organizations";
-import { v4 as uuidv4 } from 'uuid';
+import {v4 as uuidv4} from 'uuid';
 import {PlayerPutForm} from "../../model/player-put-form";
 import {FormsModule} from "@angular/forms";
 import {NgForOf, NgIf} from "@angular/common";
@@ -42,7 +42,7 @@ export class PlayerAddComponent implements OnInit {
     height: 0,
     weight: 0,
     dateOfBirth: '',
-    organization: this.defaultOrganization
+    organization: this.defaultOrganization.id
   };
 
   uuid: string = uuidv4();
@@ -53,7 +53,6 @@ export class PlayerAddComponent implements OnInit {
     private route: ActivatedRoute,
     private router: Router
   ) {
-    console.log(this.uuid);
   }
 
   ngOnInit(): void {
@@ -64,10 +63,10 @@ export class PlayerAddComponent implements OnInit {
   }
 
   onSubmit(): void {
-        this.playerService.putPlayer(this.uuid, this.player!)
-            .subscribe(() => {
-                  this.router.navigate(['/players']);
-                }
-            );
+    this.playerService.putPlayer(this.uuid, this.player!)
+      .subscribe(() => {
+          this.router.navigate(['/players']);
+        }
+      );
   }
 }

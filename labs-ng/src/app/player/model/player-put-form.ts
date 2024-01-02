@@ -1,5 +1,3 @@
-import {Organization} from "../../organization/model/organization";
-
 export interface PlayerPutForm {
   firstName: string;
   lastName: string;
@@ -9,5 +7,5 @@ export interface PlayerPutForm {
   height: number;
   weight: number;
   dateOfBirth: string;
-  organization: Organization;
+  organization: string;
 }

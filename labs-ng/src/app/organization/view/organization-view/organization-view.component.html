@@ -1,11 +1,29 @@
 <article *ngIf="organization">
+  <h1>{{organization.name}}</h1>
   <ul>
-    <li>
-      <span>Name: {{organization.name}}</span>
-    </li>
     <li>
       <span>Date of Establishment: {{organization.dateOfEstablishment}}</span>
     </li>
   </ul>
+
+  <table *ngIf="players">
+    <thead>
+    <tr>
+      <th>first/last name</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let player of players?.players">
+      <td>
+        <a [routerLink]="['/players', player.id]">{{player.firstName + " " + player.lastName}}</a>
+      <td>
+        <button class="btn" (click)="onDelete(player)">Delete</button>
+      </td>
+      <td>
+        <a class="btn" [routerLink]="['/players/edit', player.id]">Edit</a>
+      </td>
+    </tr>
+    </tbody>
+  </table>
 
 </article>

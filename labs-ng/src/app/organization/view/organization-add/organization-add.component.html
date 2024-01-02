@@ -1,0 +1,23 @@
+<p>organization-add works!</p>
+<article>
+  <header><h2>Create organization</h2></header>
+  <form class="container" (ngSubmit)="onSubmit()">
+
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" name="name" id="name" [(ngModel)]="organization.name"
+             placeholder="Enter Name" required/>
+    </div>
+
+    <div class="form-group">
+      <label for="dateOfEstablishment">Date of Establishment:</label>
+      <input type="text" name="dateOfEstablishment" id="dateOfEstablishment"
+             [(ngModel)]="organization.dateOfEstablishment" placeholder="Enter Date of Establishment"
+             required/>
+    </div>
+
+    <div class="form-group">
+      <button type="submit">Create</button>
+    </div>
+  </form>
+</article>

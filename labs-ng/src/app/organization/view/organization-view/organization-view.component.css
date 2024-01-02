@@ -1,0 +1,36 @@
+.text--justified {
+  text-align: justify; /* Justify the text inside the article */
+}
+
+header h2 {
+  text-align: center; /* Center the header text horizontally */
+  margin-bottom: 20px; /* Adjust the spacing below the header */
+}
+
+a {
+  text-decoration: none; /* Remove the default underline from links */
+}
+
+a:hover {
+  text-decoration: underline; /* Underline links on hover */
+}
+
+table {
+  width: 100%; /* Make the table fill the width of its container */
+  border-collapse: collapse; /* Collapse borders between table cells */
+  margin-top: 20px; /* Add spacing above the table */
+}
+
+th, td {
+  padding: 8px; /* Add padding to table cells */
+  text-align: left; /* Align text to the left in table cells */
+}
+
+th {
+  background-color: #3498db; /* Set header background color */
+  color: white; /* Set header text color */
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9; /* Set background color for even rows */
+}

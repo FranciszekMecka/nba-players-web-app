@@ -1,0 +1,39 @@
+.container {
+  max-width: 400px; /* Adjust the maximum width of the container */
+  margin: auto; /* Center the container horizontally */
+  padding: 20px; /* Add padding to the container */
+  border: 1px solid #ccc; /* Add a border for better visual separation */
+  border-radius: 5px; /* Add rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow for depth */
+}
+
+header h2 {
+  text-align: center; /* Center the header text horizontally */
+  margin-bottom: 20px; /* Adjust the spacing below the header */
+}
+
+ul {
+  list-style: none; /* Remove default list styles */
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px; /* Adjust the spacing between list items */
+}
+
+span {
+  font-weight: bold; /* Make the span text bold */
+}
+
+/* Add some additional styling for better readability or visual appeal */
+article {
+  margin-top: 20px; /* Add spacing above the article */
+}
+
+/* Style for the border around the article */
+article {
+  border: 1px solid #ddd; /* Border color */
+  border-radius: 5px; /* Border radius */
+  padding: 15px; /* Padding inside the article */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+}

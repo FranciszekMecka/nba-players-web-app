@@ -1,0 +1,25 @@
+nav {
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px; /* Adjust the spacing between list items */
+}
+
+nav a {
+  text-decoration: none;
+  color: #333; /* Set text color to a darker color */
+  font-weight: bold; /* Make the text bold */
+  font-size: 16px; /* Set font size */
+  transition: color 0.3s; /* Add a smooth color transition effect */
+}
+
+nav a:hover {
+  color: #00c4ff; /* Change the color on hover */
+}

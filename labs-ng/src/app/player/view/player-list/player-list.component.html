@@ -1,11 +1,10 @@
 <article class="text--justified">
   <header><h2>Players</h2></header>
-  <a [routerLink]="['/players/create']">Add a Player</a>
+  <a class="btn" [routerLink]="['/players/create']">Add a Player</a>
   <table *ngIf="players">
     <thead>
     <tr>
       <th>first/last name</th>
-      <th></th>
     </tr>
     </thead>
     <tbody>
@@ -14,6 +13,9 @@
         <a [routerLink]="['/players', player.id]">{{player.firstName + " " + player.lastName}}</a>
       <td>
         <button class="btn" (click)="onDelete(player)">Delete</button>
+      </td>
+      <td>
+        <a class="btn" [routerLink]="['/players/edit', player.id]">Edit</a>
       </td>
     </tr>
     </tbody>

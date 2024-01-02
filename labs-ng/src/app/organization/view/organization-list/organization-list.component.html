@@ -1,6 +1,8 @@
 <article class="text--justified">
   <header><h2>Teams</h2></header>
 
+  <a class="btn" [routerLink]="['/organizations/create']">Add a Team</a>
+
   <table *ngIf="organizations">
     <thead>
     <tr>
@@ -14,6 +16,9 @@
       </td>
       <td>
         <button class="btn" (click)="onDelete(organization)">Delete</button>
+      </td>
+      <td>
+        <a class="btn" [routerLink]="['/organizations/edit', organization.id]">Edit</a>
       </td>
     </tr>
     </tbody>

@@ -1,0 +1,13 @@
+footer {
+  padding: 20px 0; /* Add padding to the top and bottom */
+  text-align: center; /* Center the content horizontally */
+}
+
+.footer-container {
+  max-width: 800px; /* Set maximum width for better centering on larger screens */
+  margin: 0 auto; /* Center the container horizontally */
+}
+
+footer p {
+  margin: 10px 0; /* Add spacing above and below paragraphs */
+}
