@@ -1,1 +1,0 @@
-package eti.mecka.franciszek.project.initialize;
